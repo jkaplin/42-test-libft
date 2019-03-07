@@ -1,5 +1,7 @@
 #!/bin/bash/python3
 
+from subprocess import call
+
 tests = [
 	"memset",
 	"bzero",
@@ -63,10 +65,9 @@ tests = [
 
 print("\n\n\n-----------------------------------------------------------------------------\n")
 print("VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV\n\n")
-call("make")
 i = 1
 while (i <= len(tests)):
     print(str(i) + ")", end =' ')
-    if (tests[:2] == "put")
+    if (tests[:2] == "put"):
         call("test_print.py")
     call("./test " + tests[i - 1])
