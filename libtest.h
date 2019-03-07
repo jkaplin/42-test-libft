@@ -6,13 +6,14 @@
 /*   By: jkaplin <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/13 08:31:13 by jkaplin           #+#    #+#             */
-/*   Updated: 2019/03/05 13:18:31 by jkaplin          ###   ########.fr       */
+/*   Updated: 2019/03/07 14:16:32 by jkaplin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef TESTLIB_H
 # define TESTLIB_H
 
+#include <stdio.h>
 #include <string.h>
 
 typedef struct	s_list

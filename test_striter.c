@@ -6,7 +6,7 @@
 /*   By: jkaplin <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/21 11:31:48 by jkaplin           #+#    #+#             */
-/*   Updated: 2019/02/21 16:42:19 by jkaplin          ###   ########.fr       */
+/*   Updated: 2019/03/07 14:20:37 by jkaplin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,23 +77,23 @@ int		cmp_striter(char *s, void (*f)(char *))
 	}
 }
 
-void	f_42(char *c_ptr)
+static void	f_42(char *c_ptr)
 {
 	*c_ptr = 42;
 }
 
-void	f_plus_1(char *c_ptr)
+static void	f_plus_1(char *c_ptr)
 {
 	*c_ptr = *c_ptr + 1;
 }
 
-void	f_capitalize(char *c_ptr)
+static void	f_capitalize(char *c_ptr)
 {
 	if (*c_ptr >= 'a' && *c_ptr <= 'z')
 		*c_ptr = *c_ptr - 'a' + 'A';
 }
 
-void	f_nul_bomb(char *c_ptr)
+static void	f_nul_bomb(char *c_ptr)
 {
 		*(c_ptr + 1) = *c_ptr - 'a';
 }

@@ -6,7 +6,7 @@
 /*   By: jkaplin <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/21 15:55:20 by jkaplin           #+#    #+#             */
-/*   Updated: 2019/02/21 16:46:59 by jkaplin          ###   ########.fr       */
+/*   Updated: 2019/03/07 14:22:35 by jkaplin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,23 +77,23 @@ int		cmp_striteri(char *s, void (*f)(unsigned int, char *))
 	}
 }
 
-void	f_i(unsigned int i, char *c_ptr)
+static void	f_i(unsigned int i, char *c_ptr)
 {
 	*c_ptr = '0' + i;
 }
 
-void	f_plus_i(unsigned int i, char *c_ptr)
+static void	f_plus_i(unsigned int i, char *c_ptr)
 {
 	*c_ptr += i;
 }
 
-void	f_capitalize_sometimes(unsigned int i, char *c_ptr)
+static void	f_capitalize_sometimes(unsigned int i, char *c_ptr)
 {
 	if (*c_ptr >= 'a' && *c_ptr <= 'z' && (i % 3 == 0))
 		*c_ptr = *c_ptr - 'a' + 'A';
 }
 
-void	f_nul_bomb(unsigned int i, char *c_ptr)
+static void	f_nul_bomb(unsigned int i, char *c_ptr)
 {
 	if (i == 2)
 		c_ptr[1] = '\0';

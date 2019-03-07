@@ -6,7 +6,7 @@
 #    By: jkaplin <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/02/20 10:05:39 by jkaplin           #+#    #+#              #
-#    Updated: 2019/03/07 14:33:10 by jkaplin          ###   ########.fr        #
+#    Updated: 2019/03/07 14:32:19 by jkaplin          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -22,6 +22,12 @@ SRC =	test_atoi.c			\
 		test_isdigit.c		\
 		test_isprint.c		\
 		test_itoa.c			\
+		`test_lstadd.c		\
+		test_lstdel.c		\
+		test_lstdelone.c	\
+		test_lstiter.c		\
+		test_lstmap.c		\
+		test_lstnew.c`		\
 		test_memalloc.c		\
 		test_memccpy.c		\
 		test_memchr.c		\
@@ -30,6 +36,14 @@ SRC =	test_atoi.c			\
 		test_memdel.c		\
 		test_memmove.c		\
 		test_memset.c		\
+		`test_putchar.c		\
+		test_putchar_fd.c	\
+		test_putendl.c		\
+		test_putendl_fd.c	\
+		test_putnbr.c		\
+		test_putnbr_fd.c	\
+		test_putstr.c		\
+		test_putstr_fd.c`	\
 		test_strcat.c		\
 		test_strchr.c		\
 		test_strclr.c		\

@@ -6,15 +6,13 @@
 /*   By: jkaplin <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/13 15:53:48 by jkaplin           #+#    #+#             */
-/*   Updated: 2019/03/05 13:19:38 by jkaplin          ###   ########.fr       */
+/*   Updated: 2019/03/07 14:24:55 by jkaplin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-#include <stdio.h>
 #include "libtest.h"
 
-#define FN_AMOUNT 58
+#define FN_AMOUNT 44
 
 int		main(int argc, char **argv)
 {

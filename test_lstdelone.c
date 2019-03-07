@@ -6,7 +6,7 @@
 /*   By: jkaplin <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/24 06:35:57 by jkaplin           #+#    #+#             */
-/*   Updated: 2019/02/24 07:17:45 by jkaplin          ###   ########.fr       */
+/*   Updated: 2019/03/07 14:19:30 by jkaplin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,7 +57,7 @@ int		cmp_lstdelone(t_list **alst, void (*del)(void *, size_t))
 	}
 }
 
-void	del(void *content, size_t size)
+static void	del(void *content, size_t size)
 {
 	if (size && content)
 		free(content);

@@ -6,7 +6,7 @@
 /*   By: jkaplin <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/21 19:49:05 by jkaplin           #+#    #+#             */
-/*   Updated: 2019/02/21 20:04:48 by jkaplin          ###   ########.fr       */
+/*   Updated: 2019/03/07 14:21:20 by jkaplin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,26 +55,26 @@ int		cmp_strmapi(char const *s, char (*f)(unsigned int, char))
 	}
 }
 
-char	f_i(unsigned int i, char c)
+static char	f_i(unsigned int i, char c)
 {
 	if (c)
 		return ('a' + i);
 	return (c);
 }
 
-char	f_plus_i(unsigned int i, char c)
+static char	f_plus_i(unsigned int i, char c)
 {
 	return (c + i);
 }
 
-char	f_capitalize_i(unsigned int i, char c)
+static char	f_capitalize_i(unsigned int i, char c)
 {
 	if (c >= 'a' && c <= 'z')
 		return (c - 'a' + 'A' + i);
 	return (c);
 }
 
-char	f_nul_bomb(unsigned int i, char c)
+static char	f_nul_bomb(unsigned int i, char c)
 {
 	if ((unsigned char)c == 'a' + i)
 		return (0);
