@@ -1,6 +1,6 @@
-#!/bin/bash/python3
+#!/bin/bash/python
 
-from subprocess import call
+import os
 
 tests = [
 	"memset",
@@ -65,9 +65,13 @@ tests = [
 
 print("\n\n\n-----------------------------------------------------------------------------\n")
 print("VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV\n\n")
-i = 1
-while (i <= len(tests)):
-    print(str(i) + ")", end =' ')
-    if (tests[:2] == "put"):
-        call("test_print.py")
-    call("./test " + tests[i - 1])
+i = 0
+for test in tests:
+    if (test[:3] == "put"):
+        os.system("python test_print.py " + test + " " + test + ".exp")
+    os.system("./test " + test)
+    i += 1
+
+
+
+
